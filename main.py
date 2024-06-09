@@ -26,7 +26,7 @@ def open_calculator_window():
             y = calculate_function(x)
             result_label.config(text=f"Значение функции: {y}")
         except ValueError as e:
-            messagebox.showerror("Ошибка", str(e))
+            messagebox.showerror("Ошибка", "Неправильное значение исходных данных")
 
     calc_window = tk.Toplevel(root)
     calc_window.title("Калькулятор функции")
